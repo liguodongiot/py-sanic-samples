@@ -6,8 +6,14 @@ authors = ["李国冬 <liguodongiot@163.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+sanic = "^21.6.2"
 
 [tool.poetry.dev-dependencies]
+
+[[tool.poetry.source]]
+name = "douban"
+default = true
+url = "https://pypi.doubanio.com/simple/"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

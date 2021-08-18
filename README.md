@@ -55,8 +55,82 @@ poetry install
 
 $ poetry run pip list
 
-再比如我想在该虚拟环境下执行 app.py$ poetry run python app.py每次在虚拟环境下做点啥事，命令前面都要加上 poetry run，有点太麻烦了。这时可以使用下面这条命令，直接激活当前的虚拟环境$ poetry shell
+再比如我想在该虚拟环境下执行 app.py
+$ poetry run python app.py每次在虚拟环境下做点啥事，命令前面都要加上 poetry run，有点太麻烦了。这时可以使用下面这条命令，直接激活当前的虚拟环境$ poetry shell
 
 
 
 ```
+
+
+### 查看解释器路径
+```shell
+poetry env info
+
+```
+
+## sanic
+
+### 安装
+```shell
+
+poetry add sanic
+
+poetry show
+
+poetry show --tree  
+
+
+```
+
+
+### 启动
+
+```shell
+
+sanic server.app
+
+
+```
+
+> 小提示
+> 
+> 这是 另一个 重要的区别。其他框架带有一个内置的开发服务器，并明确表示它只用于开发。而 Sanic 的情况恰好相反。
+> 
+> 可以用于生产环境的服务器已经准备就绪
+> 
+
+
+### 入门
+
+#### Sanic 应用(Sanic Application)
+
+```shell
+实例(Instance)
+
+Sanic() 是最基础的组成部分，
+通常我们会在一个名为 server.py 的文件中将其实例化，
+当然文件名称并不是必须的, 但是我们还是推荐使用 server.py 做为文件名称来实例化 Sanic 对象。
+
+
+应用上下文(Application context)
+大多数应用程序都需要跨代码库的不同部分共享/重用数据或对象。
+最常见的例子是数据库连接。
+
+
+在 v21.3 版本中，我们引入了应用级的上下文对象，
+且使用方法与 请求上下文 一致， 这有效的避免了命名冲突可能导致的潜在问题
+
+
+App 注册表(App Registry)
+
+当您实例化一个 Sanic 对象之后， 
+您就可以随时通过 Sanic 注册表来获取该对象了，
+尤其是当您在无法通过其他方式来获取 Sanic 对象的时候， 
+这种方式将对您有非常大的帮助。
+
+
+
+```
+
+
