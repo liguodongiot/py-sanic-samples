@@ -101,36 +101,17 @@ sanic server.app
 > 
 
 
-### 入门
-
-#### Sanic 应用(Sanic Application)
-
-```shell
-实例(Instance)
-
-Sanic() 是最基础的组成部分，
-通常我们会在一个名为 server.py 的文件中将其实例化，
-当然文件名称并不是必须的, 但是我们还是推荐使用 server.py 做为文件名称来实例化 Sanic 对象。
 
 
-应用上下文(Application context)
-大多数应用程序都需要跨代码库的不同部分共享/重用数据或对象。
-最常见的例子是数据库连接。
 
-
-在 v21.3 版本中，我们引入了应用级的上下文对象，
-且使用方法与 请求上下文 一致， 这有效的避免了命名冲突可能导致的潜在问题
-
-
-App 注册表(App Registry)
-
-当您实例化一个 Sanic 对象之后， 
-您就可以随时通过 Sanic 注册表来获取该对象了，
-尤其是当您在无法通过其他方式来获取 Sanic 对象的时候， 
-这种方式将对您有非常大的帮助。
-
-
+## sanic
 
 ```
+sudo poetry add sanic-openapi
+```
+
+https://github.com/sanic-org/sanic-openapi
+https://sanic-openapi.readthedocs.io/en/stable/
+
 
 
