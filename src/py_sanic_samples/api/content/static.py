@@ -1,6 +1,7 @@
 from sanic import Blueprint
 from sanic.response import json, text, HTTPResponse
 
+
 static = Blueprint("content_static", url_prefix="/static")
  
 
@@ -9,3 +10,9 @@ static = Blueprint("content_static", url_prefix="/static")
 async def bp2_route(request, param):
     print("蓝图测试：static")
     return text(param)
+
+
+
+
+
+ 
