@@ -101,14 +101,14 @@ sanic server.app
 
 
 
-## sanic
+## sanic-openapi(swagger)
 
 ```
 sudo poetry add sanic-openapi
 ```
 
-https://github.com/sanic-org/sanic-openapi
-https://sanic-openapi.readthedocs.io/en/stable/
+- https://github.com/sanic-org/sanic-openapi
+- https://sanic-openapi.readthedocs.io/en/stable/
 
 ## pytest
 

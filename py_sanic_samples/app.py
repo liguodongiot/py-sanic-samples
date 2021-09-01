@@ -16,6 +16,10 @@ from sanic_openapi import openapi2_blueprint
 
 # app = Sanic(__name__, log_config=LOGGING_CONFIG)
 app = Sanic(__name__)
+app.config.API_VERSION = '1.1.0'
+app.config.API_TITLE = 'sanic异步框架样例'
+app.config["API_DESCRIPTION"] = "An example Swagger from Sanic-OpenAPI"
+app.config["API_TERMS_OF_SERVICE"] = "https://github.com/liguodongIOT/py-sanic-samples"
 
 # logging.info("---------")
 
