@@ -10,9 +10,6 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 
 source $HOME/.poetry/env
 
-
-
-
 ```
 
 ### 创建项目
@@ -113,5 +110,15 @@ sudo poetry add sanic-openapi
 https://github.com/sanic-org/sanic-openapi
 https://sanic-openapi.readthedocs.io/en/stable/
 
+## pytest
 
+```
+pytest -q tests/test_py_sanic_samples.py
+```
 
+```
+pytest
+
+# 可以打印print
+pytest -s 
+```
