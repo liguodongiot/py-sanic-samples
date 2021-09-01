@@ -1,9 +1,10 @@
 from sanic import Blueprint
-from .statics import statics
+from .note import note
 from .authors import authors
+from .books import books
 
 # 蓝图组(Blueprint group)
-content = Blueprint.group(statics, authors,  url_prefix="/content")
+content = Blueprint.group(authors, books, note, url_prefix="/content")
  
 
 @content.middleware("request")
