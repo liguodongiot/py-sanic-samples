@@ -121,4 +121,7 @@ pytest
 
 # 可以打印print
 pytest -s 
+
+# 同时运行4个进程，又想打印出print的内容
+pytest test_se.py -s -n 4
 ```

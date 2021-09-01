@@ -5,7 +5,6 @@ import logging
 
 info = Blueprint("info", url_prefix="/info")
 
-
 # http://127.0.0.1:8000/api/info/user
 @info.route("/user/<param>")
 async def user_route(request, param):

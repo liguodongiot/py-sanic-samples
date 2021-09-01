@@ -1,9 +1,7 @@
 from sanic import Blueprint
 from sanic.response import json, text, HTTPResponse
 
-
 authors = Blueprint("content_authors", url_prefix="/authors")
- 
 
 @authors.middleware
 async def print_on_request(request):
@@ -20,7 +18,7 @@ async def halt_response(request, response):
     return text("I halted the response")
 
 # http://127.0.0.1:8000/api/content/authors
-@authors.route("/")
+@authors.route("/bp")
 async def bp1_route(request):
     print("蓝图测试：authors")
     return text("bp1")

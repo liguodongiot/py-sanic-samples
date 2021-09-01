@@ -5,6 +5,7 @@ from sanic.exceptions import NotFound
 from sanic.response import json, text, HTTPResponse
 import logging.config
 import logging
+from sanic_openapi import openapi2_blueprint
 
 # 自定义日志使用python自带的logging打印
 # 默认的使用sanic日志打印
@@ -20,6 +21,7 @@ app = Sanic(__name__)
 
 # 所有的蓝图都会被注册。
 app.blueprint(api)
+app.blueprint(openapi2_blueprint)
 
 # Sanic 的默认日志配置
 # sanic.log.LOGGING_CONFIG_DEFAULTS
