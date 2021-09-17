@@ -5,7 +5,7 @@ description = ""
 authors = ["李国冬 <liguodongiot@163.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.8"
 sanic = "^21.6.2"
 jupyterlab = "^3.1.9"
 sanic-openapi = "^21.6.1"

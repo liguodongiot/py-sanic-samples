@@ -125,3 +125,25 @@ pytest -s
 # 同时运行4个进程，又想打印出print的内容
 pytest test_se.py -s -n 4
 ```
+
+```
+poetry env use /bin/python
+```
+
+## 注意事项
+
+### 使用x86安装
+```
+sudo arch -x86_64 poetry add scipy==1.6.1
+sudo arch -x86_64 poetry add scikit-learn==0.24.2
+```
+
+### 指定虚拟环境使用conda的python解释器
+
+
+```
+sudo poetry env use /Users/dev/miniconda3/bin/python
+
+sudo poetry env remove /Users/dev/miniconda3/bin/python
+
+```
