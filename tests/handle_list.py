@@ -14,7 +14,26 @@ dirs = "file:///Users/liguodong/work/data/temp/classify/one, file:///Users/liguo
 dirs = dirs.replace("file://", "")
 dir_list = dirs.split(',')
 dir_list = [ dir.strip() for dir in dir_list ]
+
 print(dir_list)
+
+result = ','.join(dir_list)
+print(result)
+
+
+
+params = {
+    'test_data_path':'xxxx',
+    'valid_data_path':''
+}
+
+if params.get('test_data_path', ''):
+    print("xxxxxxxxxx")
+
+
+if params.get('valid_data_path', ''):
+    print("yyyyy")
+
 
 
 

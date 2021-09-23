@@ -44,3 +44,13 @@ df = read_data_multidir("/Users/liguodong/work/data/temp/classify/one,/Users/lig
 
 print(df.shape)
 print(df.sample(5))
+
+
+
+
+aaa = [1,2,3,4,5]
+xxx = df.sample(5)
+
+print(xxx.shape)
+xxx['aaa'] = aaa
+

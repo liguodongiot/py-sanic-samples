@@ -22,6 +22,7 @@ map_dict["f1"] = [f1_list, f1_macro]
 # OrderedDict([('f1', [[0.88, 0, 93, 0.87, 0.98, 0.66], 0.99])])
 print(map_dict)
 
+logging.info(f"dict : {map_dict}")
 meature_metrics_list = []
 for score_key, score_value_list in map_dict.items():
     temp_distribution = []
@@ -40,6 +41,11 @@ for score_key, score_value_list in map_dict.items():
 
 
 print(meature_metrics_list)  
+
+
+print("----------------")
+
+
 
 class PredictionOutput(NamedTuple):
     metrics: Optional[Dict[str, float]]
