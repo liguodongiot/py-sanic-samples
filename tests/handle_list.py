@@ -35,5 +35,20 @@ if params.get('valid_data_path', ''):
     print("yyyyy")
 
 
+print("=================")
+temp = '   ,'
+
+result = temp.split(',')
+
+
+print(f"{result}")
+
+for dir in result:
+    if dir == '' or dir.isspace():
+        print("字符串为空")
+        continue
+    print("---")
+
+
 
 
