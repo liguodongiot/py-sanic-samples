@@ -24,3 +24,4 @@ class TestClass:
     def test_version(self):
         print("---helloword----")
         assert __version__ == '0.1.0'
+
