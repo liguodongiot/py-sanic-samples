@@ -110,6 +110,12 @@ sudo poetry add sanic-openapi
 - https://github.com/sanic-org/sanic-openapi
 - https://sanic-openapi.readthedocs.io/en/stable/
 
+### 接口
+
+- http://127.0.0.1:8000/swagger/
+- http://127.0.0.1:8000/swagger/swagger.json
+
+
 ## pytest
 
 ```
